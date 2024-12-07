@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Form with Default Values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- Text Input -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="John Doe">
+
+        <!-- Email Input -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="john@example.com">
+
+        <!-- Password Input -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" value="password123">
+
+        <!-- Number Input -->
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" value="30">
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" value="1990-01-01">
+
+        <!-- Radio Buttons -->
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <!-- Checkbox -->
+        <label>Preferences</label>
+        <input type="checkbox" id="newsletter" name="preferences" value="newsletter" checked>
+        <label for="newsletter">Subscribe to Newsletter</label>
+
+        <!-- Dropdown -->
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="us" selected>United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="in">India</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4">This is a default comment.</textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</head>
+
+    
+</body>
+</html>
